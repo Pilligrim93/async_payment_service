@@ -1,0 +1,75 @@
+# === Python & Скомпилированные файлы ===
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# === Виртуальные окружения ===
+.venv/
+venv/
+ENV/
+env/
+pip-log.txt
+pip-delete-this-directory.txt
+
+# === Секреты и Переменные окружения (Критично!) ===
+.env
+.env.[a-zA-Z]*
+!.env.example
+*.env
+secrets.toml
+
+# === Логи приложения и контейнеров ===
+*.log
+logs/
+*.pid
+
+# === Docker и Локальная Инфраструктура ===
+.docker/
+# Исключаем локальные папки, куда Docker монтирует volumes БД
+postgres_data/
+rabbitmq_data/
+
+# === Миграции и Базы Данных (Локальные следы) ===
+*.db
+*.sqlite3
+.alembic/
+
+# === Системный мусор (OS-specific) ===
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+Desktop.ini
+
+# === Настройки IDE (VS Code и PyCharm) ===
+.vscode/
+!.vscode/extensions.json
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.swp
+.uv/

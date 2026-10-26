@@ -1,0 +1,13 @@
+# По умолчанию для всех текстовых файлов принудительно выставляем LF (Unix-style)
+* text=auto eol=lf
+
+# Явно указываем для кода и конфигураций
+*.py text eol=lf
+*.toml text eol=lf
+*.lock text eol=lf
+*.env* text eol=lf
+*.sh text eol=lf
+
+# Для бинарных файлов (если появятся картинки или логи) автоматику отключаем
+*.png binary
+*.jpg binary
